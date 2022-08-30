@@ -6,7 +6,10 @@
 Add .env file with DATABASE_URL value<br>
 `$ npm install && npm run update-client && npm run dev`<br>
 
-First thing to do when you start adding your own code is to do a find all and replace on `myEntity`, `MyEntity`, and `MyEntities` and replace with the name of the thing you'll actually be doing crud operations on. Also do the same with `src/controllers/myEntity.ts`<br>
+First thing to do when you start adding your own code is to do a find all and replace on `myEntity`, `MyEntity`, and `MyEntities` and replace with the name of the thing you'll actually be doing crud operations on. Also do the same with `src/controllers/myEntity.ts`
+
+## create schema/db
+in `prisma/schema.prisma` add models for your tables. Then run `npm run update-db` and the tables will be created in your database
 
 # Running Tests
 `$ npm test`<br>
