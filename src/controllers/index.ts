@@ -1,4 +1,4 @@
-import { sendMail } from "../services/mailer";
+import { sendMail } from "../utils/mailer";
 import myEntity from "./myEntitiy";
 
 async function create(req, res) {
