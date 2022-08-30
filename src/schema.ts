@@ -5,9 +5,9 @@ export default gql`
   scalar DateTime
 
   type Query {
-    id: String
+    thing: String
   }
   type Mutation {
-    createId: String 
+    createThing: String 
   }
 `
