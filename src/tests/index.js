@@ -26,9 +26,7 @@ const testCreateMyEntity = () => {
          'Content-Type': `application/json`,
        },
        body: JSON.stringify({
-         name: "John",
-         email: "john7@gmail.com",
-         skills: { cSharp: 9 },
+         
        }),
      }).then(r => r.json()).then(resolve).catch(reject) 
   })
@@ -52,9 +50,7 @@ const testPut = (id) => {
          'Content-Type': `application/json`,
        },
        body: JSON.stringify({
-         skills: JSON.stringify({
-           python: 3
-         })
+
        }),
      }).then(r => r.json()).then(resolve).catch(reject) 
   })
